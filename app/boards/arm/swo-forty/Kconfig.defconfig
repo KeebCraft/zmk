@@ -1,38 +1,41 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_SWO_FORTY
+if BOARD_SWO_FORTY_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "swo-forty"
+    default "swo-forty"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+endif
+
+if BOARD_SWO_FORTY_LEFT || BOARD_SWO_FORTY_RIGHT
 
 if USB
 
 config USB_NRFX
-	default y
+    default y
 
 config USB_DEVICE_STACK
-	default y
+    default y
 
 endif # USB
 
 config BT_CTLR
-	default BT
+    default BT
 
 config ZMK_BLE
-	default y
+    default y
 
 config ZMK_USB
-	default y
+    default y
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
-	default y
+    default y
 
-endif # BOARD_SWO_FORTY
+config ZMK_SPLIT
+    default y
 
-# if BOARD_SWO_FORTY_LEFT || BOARD_SWO_FORTY_RIGHT
-
-# config ZMK_SPLIT
-# 	default y
-
-# endif
+endif

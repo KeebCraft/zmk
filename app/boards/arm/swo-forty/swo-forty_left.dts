@@ -1,6 +1,6 @@
-//swo-forty_right.overlay
+//swo-forty_left.dts
 
-#include swo-forty.dtsi
+#include "swo-forty.dtsi"
 
 &kscan0 {
 	col-gpios
