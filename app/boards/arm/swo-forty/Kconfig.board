@@ -1,0 +1,16 @@
+# swo-forty board configuration
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+# config BOARD_SWO_FORTY_LEFT
+# 	bool "swo-forty_left"
+# 	depends on SOC_NRF52840_QIAA
+# 
+# config BOARD_SWO_FORTY_RIGHT
+# 	bool "swo-forty_right"
+# 	depends on SOC_NRF52840_QIAA
+
+config BOARD_SWO_FORTY
+	bool "swo-forty"
+ 	depends on SOC_NRF52840_QIAA

@@ -22,6 +22,9 @@ jobs:
           - nice_nano
           - nrfmicro_13
           - proton_c
+          - swo-forty_left
+          - swo-forty_right
+          - swo-forty
         shield:
           - bfo9000_left
           - bfo9000_right
